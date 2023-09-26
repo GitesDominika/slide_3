@@ -16,14 +16,15 @@ body {
     position: relative;
     overflow: hidden;
     width: 100%;
-    min-height: var:(--sliderHight);
+    min-height: var(--sliderHight);
+    font-family: sans-serif;
 }
 
 .slides .slides__slide {
     position: absolute;
     width: 100%;
     top: 0;
-    min-height: var:(--sliderHight);
+    min-height: var(--sliderHight);
 }
 .slides .slides__slide:first-child{
     background: gold;
@@ -38,7 +39,14 @@ body {
     left: 200%;
 }
 
-.slides .slides__box{}
+.slides .slides__box{
+    padding: 10px;
+    background-color: rgba( 0, 0, 0, .7);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
 .slides .slides__hdl {}
 .slides .slides__lead {}
 .slides .slides__link {}
