@@ -1,4 +1,10 @@
-.slider {}
+body {
+    margin: 0;
+}
+
+.slider {
+    background-color: #red;
+}
 .slider .slider__slides {}
 .slider .slider__nav {}
 
