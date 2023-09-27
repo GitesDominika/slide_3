@@ -58,7 +58,7 @@ body {
     width: 100%;
     top: 0;
     min-height: var(--sliderHight);
-    animation-duration: 10s;
+    /**animation-duration: 10s;**/
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
@@ -69,6 +69,7 @@ body {
     background: gold;
     left: 0;
     animation-name: slide-1;
+    background:url("..img/car1.webp");
 }
 
 .slides .slides__slide:nth-child(2) {
