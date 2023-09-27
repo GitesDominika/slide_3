@@ -6,6 +6,17 @@ body {
     --sliderHight: 300px;
 }
 
+@font-face {
+    src: url('../fonts/roboto-bold-webfont.woff2') format('woff2');
+
+}
+
+
+@font-face {
+    src: url('../fonts/roboto-light-webfont.woff2') format('woff2');
+
+}
+
 .slider {
     background-color: red;
 }
@@ -58,61 +69,77 @@ body {
     width: 100%;
     top: 0;
     min-height: var(--sliderHight);
-    /**animation-duration: 10s;**/
+    /*animation-duration: 10s;*/
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
 }
 
 
 
 .slides .slides__slide:first-child {
-    background: gold;
+    background-color: gold;
     left: 0;
     animation-name: slide-1;
-    background:url("..img/car1.webp");
+    background-image:url("../img/car1.webp");
+
 }
 
 .slides .slides__slide:nth-child(2) {
-    background: silver;
+    background-color: silver;
     left: 100%;
     animation-name: slide-2;
+    background-image:url("../img/car2.webp");
 }
 
 .slides .slides__slide:last-child {
-    background: green;
+    background-color: green;
     left: 200%;
-    animation-name: slide-3
+    animation-name: slide-3;
+    background-image:url("../img/car3.webp");
 }
 
 .slides .slides__box {
-    padding: 10px;
+    padding: 10px 154px 10px 10px;
     background-color: rgba(0, 0, 0, .7);
-    position: absolute;
+    position: absolute; /* absolut dziala w parze z relative ktory jest wyzej w w kodzie moze byc w rodzicu ale omze byc uzyty i wczesniej/ */
     bottom: 0;
     width: 100%;
     box-sizing: border-box;
+    color: white;
 }
 
 .slides .slides__hdl {
+    font-family: 'Roboto Bold';
 }
 
 .slides .slides__lead {
+    font-family: 'Roboto light';
+
 }
 
 .slides .slides__link {
+    text-decoration: none;
+    position: absolute; /*absolut nie dziala bez right i top   */
+    color: white;
+    text-transform: uppercase;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .slider-nav {
 }
 
-.slider-nav .slider-nav__btn {
-}
+.slider-nav .slider-nav__btn {}
+
 
 .slider-nav .slider-nav__btn.slider-nav__btn--prev {
 }
 
-React
-Reply
+
 
 
 
